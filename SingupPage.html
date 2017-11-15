@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Singup page</title>
+
+	<!-- Invoking external javascript file -->
+	<script type="text/javascript" src="StudentSignupJS.js"></script>
+
+	<!-- Invoking external CSS file -->
+	<link rel="stylesheet" type="text/css" href="SignupPageStyles.css"> 
+</head>
+<body>
+<center><h1>Student Library portal</h1></center>
+<div>
+	<h2 style="color: orange;">Create an account</h2>
+	<form>
+		<input type="text" name="username" id="username" placeholder="Username" >
+		<input type="text" name="email" id="emailid" placeholder="Email address">
+		<input type="password" name="password" id="pwd" placeholder="Password">
+			
+		<!-- Using external javascript function to create account for user -->
+		<input type="button" id="btnsubmit" value="Signup" onclick="createUser();">
+
+		<!-- set different background color to back button and on click of back button open main page (index.html) page -->
+		<input style="background-color: #f2f2f2; color: black;" type="button" name="back" id="btnBack" value="Back" onclick="window.open('index.html','_self');">
+
+
+	</form>
+</div>
+</body>
+</html>

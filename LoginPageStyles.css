@@ -1,0 +1,50 @@
+	h1
+	{
+	 	color: #000080;
+	 	font-family: Arial;
+	 	 
+	}
+
+	div
+	{
+		margin-left: 450px;
+	    margin-top: 80px;
+	    font-family: Arial;
+	}
+
+	form
+	{
+		background: #B0BC4A;
+		width: 50%;
+		padding: 15px 20px;			
+	}
+
+	input[type=text], input[type=password]
+	{
+		padding: 8px 12px;
+		margin: 12px 15px;			 			
+		border: 1px solid #ccc;
+		border-radius: none;	
+		display: block;
+		width: 75%;
+		margin: 10px 15px; 
+	}
+
+	input[type=button]
+	{
+	 	border: none;
+	 	color: white;
+	 	font-size: 20px;	 	 
+	 	padding: 5px 15px;
+	 	margin-left: 15px;
+	 	margin-top: 10px;
+	 	background-color: #4CAF50;
+	}
+
+	/* style for error message */
+	#error
+	{
+	 	color: red;
+	 	font-size: 22px;
+	 	font-family: sans-serif;
+	}

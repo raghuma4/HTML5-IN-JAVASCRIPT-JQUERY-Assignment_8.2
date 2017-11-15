@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home page</title>
+
+	<!-- Invoking external CSS file -->
+	<link rel="stylesheet" type="text/css" href="WelcomePageStyles.css"> 
+
+	<!-- Internal javascript -->
+	<script type="text/javascript">
+		window.onload = function () {
+			
+			// the username value will be passed from LoginPage and Signup page
+			// so retrieve the value from url
+			this.uname = window.location.hash.substring(1);
+
+			// set para with uname with the passed username value
+			document.getElementById('uname').innerHTML = this.uname;
+		}
+	</script>
+</head>
+<body>
+	<center><h1>Student Library portal</h1></center>
+ <div>
+ 	<p id="welcomemsg">Welcome</p>
+ 	<p id="uname"></p>
+ 	
+ 	<!-- on click of logout redirect to main page (index.html) -->
+	<input type="button" id="btnLogout" value="Logout" onclick="window.open('index.html','_self');">
+
+ </div>
+</body>
+</html>
